@@ -1,0 +1,19 @@
+CREATE DATABASE Biblioteca; 
+use Biblioteca;
+
+create table bibliotecario(
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR (255) NOT NULL,
+    email VARCHAR (255) UNIQUE
+)
+
+create table dados_livro(
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR (255) NOT NULL,
+    autor VARCHAR (255) NOT NULL,
+    genero VARCHAR (255) NOT NULL,
+    status ENUM ('Disponivel', 'Emprestado', 'Reservado'),
+    data_cadastro DATE NOT NULL,
+    bibliotecarioId BIGINT,
+    Foreign Key (bibliotecarioId) REFERENCES bibliotecario (id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
