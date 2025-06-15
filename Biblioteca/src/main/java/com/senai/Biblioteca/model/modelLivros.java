@@ -1,12 +1,15 @@
 package com.senai.Biblioteca.model;
-
-import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,18 +26,24 @@ public class modelLivros {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
   private String titulo;
 
-      @Column(nullable = false)
+      @Column(nullable = false, length = 255)
   private String autor;
-  
-    @Column(nullable = false)
-  private String genero;
 
-    @Column(nullable = false)
-  private Enum status;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 80)
+  private generoLivro genero;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 80)
+  private statusLivro status;
 
   @Column(nullable = false)
-  private Date data;
+  private LocalDate data_cadastro;
+
+  @ManyToOne
+  @JoinColumn(name = "bibliotecario")
+  private modelBibliotecario bibliotecario;
 }

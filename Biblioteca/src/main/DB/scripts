@@ -11,9 +11,9 @@ create table dados_livro(
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR (255) NOT NULL,
     autor VARCHAR (255) NOT NULL,
-    genero VARCHAR (255) NOT NULL,
-    status ENUM ('Disponivel', 'Emprestado', 'Reservado'),
+    genero ENUM ('ROMANCE','FICCAO_CIENTIFICA','FANTASIA','TERROR','SUSPENSE','AVENTURA','DRAMA','COMEDIA','POESIA','BIOGRAFIA','AUTOBIOGRAFIA','ENSAIO','CONTO','CRONICA'),
+    status enum ('DISPONÍVEL', 'EMPRESTADO', 'RESERVADO'),
     data_cadastro DATE NOT NULL,
-    bibliotecarioId BIGINT,
-    Foreign Key (bibliotecarioId) REFERENCES bibliotecario (id)
+    bibliotecario BIGINT,
+    Foreign Key (bibliotecario) REFERENCES bibliotecario (id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;

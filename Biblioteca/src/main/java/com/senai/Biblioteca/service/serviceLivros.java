@@ -18,15 +18,19 @@ public class serviceLivros {
         return repository.findAll();
     }
 
-    public modelLivros save(modelLivros livros ){
+    public modelLivros adicionarLivro (modelLivros livros ){
         return repository.save(livros);
     }
 
     public void deletar(Long id){
-          repository.deleteById(id);
+        repository.deleteById(id);
     }
 
     public Optional<modelLivros> buscarPorID(Long id){
         return repository.findById(id);
-  }
+    }
+
+    public List<modelLivros> listarPorBibliotecario(Long id) {
+        return repository.findByBibliotecario_id(id);
+    }
 }
