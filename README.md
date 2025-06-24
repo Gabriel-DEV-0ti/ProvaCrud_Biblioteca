@@ -1,30 +1,6 @@
 Prova Prática – Técnico em Desenvolvimento de Sistemas
 Tema: Catálogo de Livros de Biblioteca
 
-Orientações Gerais
-• Desligue e guarde o seu telefone celular.
-• Antes de iniciar a prova, leia atentamente as instruções contidas neste
-caderno e esclareça as dúvidas com o avaliador, caso necessário. Para
-isso, você terá os 30 minutos iniciais de ambientação para ler a prova na
-íntegra e reconhecer o posto de trabalho, além de verificar se todas as
-ferramentas, documentos e tecnologias estão disponíveis.
-• Aguarde o avaliador sinalizar o fim da ambientação ou informe a ele que
-você quer iniciar a prova. A partir desse momento contará o tempo de 03
-horas para que você realize as atividades.
-• Para a execução desta prova, estão disponíveis no seu posto de trabalho:
-máquinas, equipamentos, instrumentos, ferramentas, materiais de
-consumo e toda documentação técnica necessária para realização das
-atividades.
-• Durante a prova, lembre-se de cumprir todas as exigências referentes às
-normas de saúde, segurança do trabalho e de meio ambiente, incluindo o
-uso de equipamentos de proteção individual, de acordo com a atividade.
-• Ao final da avaliação, este caderno e demais itens disponibilizados devem
-ser devolvidos ao avaliador.
-• Para registrar o final da sua prova, você deverá assinar o canhoto da prova
-junto com o seu avaliador.
-• O avaliador está à disposição para dirimir qualquer dúvida, desde que não
-seja referente à resolução da prova.
-
 Contextualização
 Uma biblioteca pública está em processo de modernização e precisa de um
 sistema que auxilie no cadastro dos livros e dos bibliotecários responsáveis por
