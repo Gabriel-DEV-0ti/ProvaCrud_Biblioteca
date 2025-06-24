@@ -5,41 +5,62 @@ Contextualização
 Uma biblioteca pública está em processo de modernização e precisa de um
 sistema que auxilie no cadastro dos livros e dos bibliotecários responsáveis por
 cada registro.
+
 Atualmente, os dados são organizados em planilhas, o que dificulta a consulta e o
 controle de empréstimos. O novo sistema deve permitir:
 
 • O cadastro de bibliotecários com seus dados básicos.
+
 • O cadastro de livros, vinculados a um bibliotecário.
+
 • A edição, exclusão e alteração do status dos livros (Disponível,
 Emprestado, Reservado).
 
+
 Desafio
+
 Utilizando os conhecimentos adquiridos ao longo do curso, desenvolva uma
 aplicação de catálogo de livros com os seguintes requisitos:
 Dados do bibliotecário:
+
 • ID (gerado automaticamente)
+
 • Nome
+
 • E-mail
+
+
 Dados do livro:
+
 • ID (gerado automaticamente)
+
 • ID do bibliotecário responsável (chave estrangeira)
+
 • Título
+
 • Autor
+
 • Gênero (Romance, Técnico, Fantasia, etc.)
+
 • Status (Disponível, Emprestado, Reservado) – padrão: Disponível
+
 • Data de cadastro
+
 Regras de negócio:
+
 • Um bibliotecário pode cadastrar vários livros, mas cada livro deve estar
 vinculado a apenas um bibliotecário.
+
 • Todos os campos são obrigatórios.
+
 • O sistema deve permitir cadastrar, editar e excluir registros de livros.
+
 • O status do livro pode ser alterado após o cadastro.
 
 Entregas
 No Entrega Descrição
 
 1
-
 Diagrama Entidade-
 Relacionamento (DER)
 
